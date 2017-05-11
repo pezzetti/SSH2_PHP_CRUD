@@ -4,7 +4,7 @@ Simple class to work with CRUD operations in SSH2
 
 
 #Usage
-
+```php
 require_once 'SFTPConnection.php';
 try {
   	$sftp = new SFTPConnection("your_host","username", "password");	   		
@@ -15,6 +15,7 @@ try {
 }catch (Exception $e) {
     echo $e->getMessage() . "\n";
 }
+```
 	
   
   
