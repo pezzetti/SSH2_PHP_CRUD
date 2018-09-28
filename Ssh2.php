@@ -94,6 +94,10 @@ public class SFTPConnection
             }
         }
     }
+    
+    public function delete_file($directory, $fileName) { 
+        return ssh2_sftp_unlink($this->sftp, $directory . '/' . $fileName); 
+    }
 
 
 }
